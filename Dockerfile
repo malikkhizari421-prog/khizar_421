@@ -1,22 +1,16 @@
-# Use Latest LTS Node
 FROM node:lts-buster
 
-# Install git
-RUN apt-get update && apt-get install -y git
-
-# Clone your bot
+# Clone bot from GitHub
 RUN git clone https://github.com/Adeel-Xtech/ADEEL-MD.git /root/adeel-bot
 
-# Set working directory to the cloned folder
-WORKDIR /root/adeel-bot
+# Set working directory
+WORKDIR /root/arslan-bot
 
 # Install dependencies
-RUN npm install --legacy-peer-deps || true
-RUN npm install -g pm2
+RUN npm install && npm install -g pm2 || yarn install --network-concurrency 1
 
-# Expose correct port for Render & Heroku
-EXPOSE 3000
-ENV PORT=3000
+# Expose port
+EXPOSE 9090
 
 # Start the bot
 CMD ["npm", "start"]
