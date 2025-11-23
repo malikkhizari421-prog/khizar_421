@@ -57,7 +57,7 @@
   <a href="https://dashboard.heroku.com/new?template=https://github.com/Adeel-Xtech/ADEEL-MD">
     <img src="https://img.shields.io/badge/Deploy-Heroku-7952B3?style=for-the-badge&logo=heroku&logoColor=white" />
   </a>
-  <a href="https://dashboard.render.com/deploy?repo=https://github.com/Adeel-Xtech/ADEEL-MD">
+  <a href="https://dashboard.render.com/web/new" target="_blank">
     <img src="https://img.shields.io/badge/Deploy-Render-FF0000?style=for-the-badge&logo=render&logoColor=white" />
   </a>
 </p>
